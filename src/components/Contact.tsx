@@ -50,7 +50,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-muted-foreground">analyst@example.com</p>
+                  <a href="mailto:turinayobenoit2@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    turinayobenoit2@gmail.com
+                  </a>
                 </div>
               </div>
             </Card>

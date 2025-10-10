@@ -8,8 +8,8 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span>Data</span>
-              <span className="text-accent">Analyst</span>
+              <span>TURINAYO </span>
+              <span className="text-accent">Benoit</span>
             </div>
             <p className="text-primary-foreground/80">
               Transforming data into strategic insights for evidence-based decision making.
@@ -64,7 +64,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="mailto:analyst@example.com"
+                href="mailto:turinayobenoit2@gmail.com"
                 className="p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-all"
               >
                 <Mail size={20} />
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/70">
-            © {new Date().getFullYear()} Data Analyst Portfolio. All rights reserved.
+            © {new Date().getFullYear()} TURINAYO Benoit. All rights reserved.
           </p>
         </div>
       </div>

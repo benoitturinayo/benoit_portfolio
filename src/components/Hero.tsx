@@ -21,9 +21,9 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           <div className="animate-fade-in">
+            <p className="text-lg md:text-xl mb-2 text-primary-foreground/80 font-medium">Hello, I'm</p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Data-Driven Insights,
-              <span className="block text-accent"> Strategic Solutions</span>
+              TURINAYO Benoit
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
               Expert data analyst specializing in transforming complex data into actionable intelligence through advanced analytics and research methodologies.

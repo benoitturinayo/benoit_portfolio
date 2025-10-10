@@ -15,9 +15,9 @@ const skillCategories = [
     color: "text-primary"
   },
   {
-    title: "Statistical Software",
+    title: "Statistical & BI Tools",
     icon: BarChart3,
-    skills: ["STATA", "Excel", "Advanced Analytics"],
+    skills: ["STATA", "Excel", "Power BI", "Tableau"],
     color: "text-accent"
   },
   {
