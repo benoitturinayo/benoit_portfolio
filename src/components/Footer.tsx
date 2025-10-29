@@ -77,6 +77,15 @@ const Footer = () => {
           <p className="text-primary-foreground/70">
             © {new Date().getFullYear()} TURINAYO Benoit. All rights reserved.
           </p>
+          <div className="text-primary-foreground/70 mt-2 text-sm">
+            <a href="tel:+250781653437" className="hover:text-accent transition-colors">
+              (+250) 781 653 437
+            </a>
+            <span className="mx-2">|</span>
+            <a href="tel:+250732333000" className="hover:text-accent transition-colors">
+              (+250) 732 333 000
+            </a>
+          </div>
         </div>
       </div>
     </footer>

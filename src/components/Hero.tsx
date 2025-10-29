@@ -33,15 +33,16 @@ const Hero = () => {
                 View My Work
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20"
-                onClick={() => window.open('/resume.pdf', '_blank')}
-              >
-                <Download className="mr-2" />
-                Download Resume
-              </Button>
+              <a href="/Benoit_TURINAYO_Portfolio.pdf" download="Benoit_TURINAYO_Portfolio.pdf">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="group bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20"
+                >
+                  Download Full Portfolio
+                  <Download className="ml-2 group-hover:scale-110 transition-transform" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>

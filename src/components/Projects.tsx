@@ -4,6 +4,20 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Interactive Power BI Dashboard",
+    description: "A dynamic and interactive dashboard created with Power BI to visualize key business metrics. Features include drill-down capabilities, custom slicers, and insightful data storytelling.",
+    tags: ["Power BI", "DAX", "Data Modeling", "Dashboard Design"],
+    metrics: "Interactive Dashboard",
+    link: "https://drive.google.com/file/d/10GdzyYWhC94aRx93G3t3gGXAJFzOm07g/view?usp=sharing"
+  },
+  {
+    title: "Advanced Excel Dashboard",
+    description: "A comprehensive dashboard built in Excel for financial analysis and performance tracking. Utilizes advanced formulas, pivot tables, charts, and macros for automation and deep insights.",
+    tags: ["Excel", "Pivot Tables", "VBA", "Financial Analysis"],
+    metrics: "Interactive Dashboard",
+    link: "https://drive.google.com/file/d/1gyyJ7eyeG31R8kZ1lHobzTcNmNH-oKG2/view?usp=sharing"
+  },
+  {
     title: "Ending Hunger - Malnutrition Analysis Project",
     description: "Comprehensive analysis to address micronutrient deficiencies by mapping malnutrition hotspots using geospatial data. Developed predictive models of malnutrition risk, analyzed root causes of stunting and deficiencies, and recommended multi-sectoral interventions involving health, agriculture, and education sectors.",
     tags: ["GIS", "Python", "Machine Learning", "Data Visualization"],
