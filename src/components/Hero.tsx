@@ -26,7 +26,7 @@ const Hero = () => {
               TURINAYO Benoit
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Motivated and certified Data Analyst with a BSc in Applied Statistics and hands-on experience in data cleaning, visualization, and statistical modeling using Python, R, Power BI, and SQL. Skilled in managing large datasets, developing analytical dashboards, and applying machine learning and geospatial techniques to real-world problems. Experienced in national-level research projects related to public health, education, and livelihoods. Passionate about using data-driven insights to support sustainable development and environmental initiatives.
+              Certified Data Analyst with BSc in Applied Statistics. Expert in Python, R, Power BI, and SQL. Specializing in machine learning, geospatial analysis, and delivering data-driven insights for sustainable development and public health initiatives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="lg" className="group" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
