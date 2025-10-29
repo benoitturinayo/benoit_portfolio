@@ -35,9 +35,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="text-2xl font-bold">
             <span className={isScrolled ? "text-primary" : "text-primary-foreground"}>
-              Data
+              TURINAYO 
             </span>
-            <span className="text-accent">Analyst</span>
+            <span className="text-accent"> Benoit</span>
           </div>
 
           {/* Desktop Navigation */}

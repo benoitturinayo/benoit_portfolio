@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Linkedin, Youtube, Phone, Send, Users } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -59,12 +59,38 @@ const Contact = () => {
 
             <Card className="p-6 bg-card border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center space-x-4">
+                <div className="p-3 rounded-full bg-primary text-primary-foreground">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Phone</h3>
+                  <div className="space-y-1">
+                    <a href="tel:+250781653437" className="block text-muted-foreground hover:text-primary transition-colors">
+                      (+250) 781 653 437
+                    </a>
+                    <a href="tel:+250732333000" className="block text-muted-foreground hover:text-primary transition-colors">
+                      (+250) 732 333 000
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-card border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-accent text-accent-foreground">
                   <Linkedin size={24} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">LinkedIn</h3>
-                  <p className="text-muted-foreground">linkedin.com/in/yourprofile</p>
+                  <a 
+                    href="https://www.linkedin.com/in/turinayo-benoit-820877257" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    View Profile
+                  </a>
                 </div>
               </div>
             </Card>
@@ -72,21 +98,55 @@ const Contact = () => {
             <Card className="p-6 bg-card border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary text-primary-foreground">
-                  <Github size={24} />
+                  <Youtube size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">GitHub</h3>
-                  <p className="text-muted-foreground">github.com/yourprofile</p>
+                  <h3 className="font-semibold text-lg">YouTube</h3>
+                  <a 
+                    href="https://www.youtube.com/@benoitpeacemaker" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    @benoitpeacemaker
+                  </a>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-gradient-to-br from-accent/10 to-primary/10 border-accent hover:shadow-lg transition-shadow">
+              <div className="flex items-center space-x-4">
+                <div className="p-3 rounded-full bg-accent text-accent-foreground">
+                  <Users size={24} />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg mb-2">Free Online Training</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Join my free statistical software training sessions
+                  </p>
+                  <Button 
+                    variant="default"
+                    size="sm"
+                    onClick={() => window.open('https://chat.whatsapp.com/J0eImg5bwlX1JA3A5Maozv', '_blank')}
+                  >
+                    Join WhatsApp Group
+                  </Button>
                 </div>
               </div>
             </Card>
 
             <div className="pt-6">
-              <h3 className="text-xl font-semibold mb-4">Availability</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Currently available for consulting projects and research collaborations. 
-                Typical response time: 24-48 hours.
-              </p>
+              <h3 className="text-xl font-semibold mb-4">Experience</h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-medium">Associated Data Analyst & Senior Cofacilitator</p>
+                  <p className="text-sm text-muted-foreground">Data Plus Rwanda • 3 years</p>
+                </div>
+                <div>
+                  <p className="font-medium">Senior Facilitator</p>
+                  <p className="text-sm text-muted-foreground">EduConnect Rwanda • 2 years</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

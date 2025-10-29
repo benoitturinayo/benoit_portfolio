@@ -4,28 +4,29 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Healthcare Analytics Dashboard",
-    description: "Developed comprehensive analytics dashboard analyzing patient outcomes and treatment efficacy using Python and PostgreSQL. Resulted in 30% improvement in treatment protocols.",
-    tags: ["Python", "PostgreSQL", "Data Visualization"],
-    metrics: "30% efficiency increase"
+    title: "Ending Hunger - Malnutrition Analysis Project",
+    description: "Comprehensive analysis to address micronutrient deficiencies by mapping malnutrition hotspots using geospatial data. Developed predictive models of malnutrition risk, analyzed root causes of stunting and deficiencies, and recommended multi-sectoral interventions involving health, agriculture, and education sectors.",
+    tags: ["GIS", "Python", "Machine Learning", "Data Visualization"],
+    metrics: "Interactive Dashboard",
+    link: "https://ending-hunger.vercel.app/"
   },
   {
-    title: "Survey Data Analysis - Education Sector",
-    description: "Conducted large-scale survey analysis using KoboToolbox and STATA for educational research. Processed responses from 5,000+ participants across multiple regions.",
-    tags: ["KoboToolbox", "STATA", "R"],
-    metrics: "5,000+ respondents"
+    title: "National Motorcycle Operators Survey - Rwanda",
+    description: "Conducted comprehensive data cleaning, statistical analysis, and reporting for national survey on motorcycle operators. Analyzed operational patterns, safety concerns, and economic impacts across Rwanda.",
+    tags: ["STATA", "R", "Survey Analysis"],
+    metrics: "National-level research"
   },
   {
-    title: "Market Research Database",
-    description: "Designed and implemented MySQL database for market research firm, optimizing data retrieval processes and creating automated reporting systems.",
-    tags: ["MySQL", "Database Design", "Excel"],
-    metrics: "70% faster queries"
+    title: "Legal Aid Accessibility Study - Rwanda",
+    description: "Performed data cleaning, statistical analysis, and reporting for national survey examining legal aid accessibility. Identified barriers and opportunities to improve justice system access for vulnerable populations.",
+    tags: ["Python", "Statistical Analysis", "Excel"],
+    metrics: "Policy recommendations"
   },
   {
-    title: "Statistical Modeling Project",
-    description: "Built predictive models using R and Python for agricultural yield forecasting. Implemented machine learning algorithms achieving 85% accuracy.",
-    tags: ["R", "Python", "Machine Learning"],
-    metrics: "85% accuracy"
+    title: "STEM Education Analysis - Rwanda",
+    description: "Conducted large-scale data analysis for national survey on STEM education initiatives. Evaluated program effectiveness, student outcomes, and provided insights for educational policy development.",
+    tags: ["R", "Data Visualization", "Power BI"],
+    metrics: "Education sector impact"
   }
 ];
 
@@ -45,12 +46,15 @@ const Projects = () => {
             <Card 
               key={index}
               className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card group cursor-pointer"
+              onClick={() => project.link && window.open(project.link, '_blank')}
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-semibold group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <ExternalLink className="text-muted-foreground group-hover:text-accent transition-colors" size={20} />
+                {project.link && (
+                  <ExternalLink className="text-muted-foreground group-hover:text-accent transition-colors" size={20} />
+                )}
               </div>
               
               <p className="text-muted-foreground mb-4 leading-relaxed">

@@ -1,4 +1,4 @@
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Youtube, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/turinayo-benoit-820877257" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-all"
@@ -56,12 +56,12 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://www.youtube.com/@benoitpeacemaker" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 rounded-full hover:bg-accent hover:text-accent-foreground transition-all"
               >
-                <Github size={20} />
+                <Youtube size={20} />
               </a>
               <a 
                 href="mailto:turinayobenoit2@gmail.com"

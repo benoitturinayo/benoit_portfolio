@@ -21,9 +21,9 @@ const skillCategories = [
     color: "text-accent"
   },
   {
-    title: "Survey Tools",
+    title: "Survey & GIS Tools",
     icon: FileSpreadsheet,
-    skills: ["KoboToolbox", "SurveyCTO", "ODK"],
+    skills: ["KoboToolbox", "SurveyCTO", "GIS", "ODK"],
     color: "text-primary"
   }
 ];

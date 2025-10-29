@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Database, FileQuestion, Clipboard } from "lucide-react";
+import { TrendingUp, Database, FileQuestion, Clipboard, GraduationCap } from "lucide-react";
 
 const services = [
   {
@@ -22,6 +22,11 @@ const services = [
     description: "Create effective survey instruments and questionnaires that capture accurate data. Specialized in mobile data collection tools and survey optimization.",
     icon: Clipboard,
   },
+  {
+    title: "Statistical Software Training",
+    description: "Professional training and teaching in statistical software including Python, R, STATA, Power BI, and Excel. Offering both individual sessions and group workshops with hands-on practical experience.",
+    icon: GraduationCap,
+  },
 ];
 
 const Services = () => {
@@ -35,7 +40,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
