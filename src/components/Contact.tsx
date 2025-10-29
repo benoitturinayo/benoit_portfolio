@@ -1,10 +1,53 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Youtube, Phone, Send, Users } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", { // Replace with your Formspree endpoint
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        (event.target as HTMLFormElement).reset();
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: "Oops! Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Oops! Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -18,25 +61,25 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <Card className="p-8 bg-card border-border">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                <Input id="name" placeholder="Your name" />
+                <Input id="name" name="name" placeholder="Your name" required />
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                <Input id="email" type="email" placeholder="your.email@example.com" />
+                <Input id="email" name="email" type="email" placeholder="your.email@example.com" required />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <Textarea id="message" placeholder="Tell me about your project..." rows={5} />
+                <Textarea id="message" name="message" placeholder="Tell me about your project..." rows={5} required />
               </div>
               
-              <Button type="submit" className="w-full" size="lg">
+              <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                 <Send className="mr-2" size={18} />
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </Card>

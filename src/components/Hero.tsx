@@ -14,7 +14,7 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-accent/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-accent/90"></div>
       </div>
 
       {/* Content */}
@@ -33,13 +33,13 @@ const Hero = () => {
                 View My Work
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <a href="/Benoit_TURINAYO_Portfolio.pdf" download="Benoit_TURINAYO_Portfolio.pdf">
+              <a href="/Benoit_TURINAYO_Portfolio.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
                   className="group bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20"
                 >
-                  Download Full Portfolio
+                  Download Portfolio PDF
                   <Download className="ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </a>
