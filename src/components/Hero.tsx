@@ -26,20 +26,20 @@ const Hero = () => {
               TURINAYO Benoit
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Certified Data Analyst with BSc in Applied Statistics. Expert in Python, R, Power BI, and SQL. Specializing in machine learning, geospatial analysis, and delivering data-driven insights for sustainable development and public health initiatives.
+              Certified data scientist and analyst with BSc in Applied Statistics. Expert in Python, R, Power BI, and SQL. Specializing in machine learning, geospatial analysis, and delivering data-driven insights for sustainable development and public health initiatives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="lg" className="group" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
                 View My Work
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <a href="/Benoit_TURINAYO_Portfolio.pdf" download>
+              <a href="https://drive.google.com/file/d/1NqlNmGR5ByAD8jHPx5seKnYGyZRHdVLA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="outline"
                   size="lg"
                   className="group bg-background/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-background/20"
                 >
-                  Download Portfolio PDF
+                  Download Resume
                   <Download className="ml-2 group-hover:scale-110 transition-transform" />
                 </Button>
               </a>
