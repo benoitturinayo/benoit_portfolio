@@ -16,6 +16,7 @@ const Navigation = () => {
 
   const navLinks = [
     { name: "Home", href: "#home" },
+    { name: "Background", href: "#background" },
     { name: "Skills", href: "#skills" },
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
@@ -41,7 +42,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}

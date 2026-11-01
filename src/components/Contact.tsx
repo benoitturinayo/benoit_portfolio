@@ -178,19 +178,6 @@ const Contact = () => {
               </div>
             </Card>
 
-            <div className="pt-6">
-              <h3 className="text-xl font-semibold mb-4">Experience</h3>
-              <div className="space-y-3">
-                <div>
-                  <p className="font-medium">Associated Data Analyst & Senior Cofacilitator</p>
-                  <p className="text-sm text-muted-foreground">Data Plus Rwanda • 3 years</p>
-                </div>
-                <div>
-                  <p className="font-medium">Senior Facilitator</p>
-                  <p className="text-sm text-muted-foreground">EduConnect Rwanda • 2 years</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

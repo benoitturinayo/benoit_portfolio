@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Background from "@/components/Background";
 import Skills from "@/components/Skills";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
@@ -12,6 +13,9 @@ const Index = () => {
       <Navigation />
       <div id="home">
         <Hero />
+      </div>
+      <div id="background" className="scroll-mt-16">
+        <Background />
       </div>
       <div id="skills">
         <Skills />

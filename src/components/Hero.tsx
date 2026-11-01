@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { heroData } from "@/lib/data";
 
 const Hero = () => {
   return (
@@ -21,12 +22,12 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           <div className="animate-fade-in">
-            <p className="text-lg md:text-xl mb-2 text-primary-foreground/80 font-medium">Data is a story waiting to be told</p>
+            <p className="text-lg md:text-xl mb-2 text-primary-foreground/80 font-medium">{heroData.subtitle}</p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              TURINAYO Benoit
+              {heroData.title}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Certified data scientist and analyst with BSc in Applied Statistics. Expert in Python, R, Power BI, and SQL. Specializing in machine learning, geospatial analysis, and delivering data-driven insights for sustainable development and public health initiatives.
+              {heroData.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="lg" className="group" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
