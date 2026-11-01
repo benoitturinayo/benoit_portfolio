@@ -1,5 +1,6 @@
 import { Award, BriefcaseBusiness, GraduationCap } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { certifications } from "@/lib/data";
 
 const Background = () => (
   <section className="py-20 bg-muted/30" aria-labelledby="background-heading">
@@ -52,8 +53,17 @@ const Background = () => (
         <Card className="p-8 bg-card border-border">
           <Award className="text-primary mb-4" size={32} aria-hidden="true" />
           <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
-          <h4 className="font-semibold text-lg">Advanced AI, Machine Learning, and Big Data Analytics</h4>
-          <p className="text-sm font-medium text-primary mt-2">Certified</p>
+          <ul className="space-y-5">
+            {certifications.map((certification) => (
+              <li key={certification} className="flex items-start gap-3">
+                <Award className="text-primary shrink-0 mt-1" size={20} aria-hidden="true" />
+                <div>
+                  <h4 className="font-semibold text-lg">{certification}</h4>
+                  <p className="text-sm font-medium text-primary mt-1">Certified</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </Card>
       </div>
     </div>
